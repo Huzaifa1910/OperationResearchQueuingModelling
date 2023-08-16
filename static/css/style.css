@@ -1,0 +1,414 @@
+.bkimg{
+    /* background-image: url("bk.jpg"); */
+    /* background-size: cover; */
+    background-color: #dddddd;
+    /* background-repeat: no-repeat; */
+    display: flex;
+}
+.title{
+    text-align: center;
+    color: rgb(41, 57, 59);
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 2.2;
+}
+.login{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    height: 600px;
+}
+.btnsize{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    /* background-color: rgba(255, 228, 196, 0);
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7),
+    rgba(54, 1, 1, 0.7)); */
+    border: none;
+    border-radius: 13px;
+}
+.btnsize:hover{
+    background-color: black;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------------SIDEBAR------------------------ */
+.sidebar{
+    height: 625px;
+    background-color: black;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 70px 0px;
+}
+.sidebar a{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* ----------------------PRODUCTS----------------------- */
+.pagehead{
+    color: white;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.titleinv1{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.btnsize2{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background-color: rgba(255, 228, 196, 0); */
+    /* background-image: linear-gradient(rgba(255, 0, 0, 0.7), */
+    /* rgba(54, 1, 1, 0.7)); */
+    border: none;
+    border-radius: 130px;
+}
+.btnsize2:hover{
+    background-color: black;
+}
+
+.btnss2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+.btnsize3{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7),
+    rgba(54, 1, 1, 0.7));
+    border: none;
+    border-radius: 130px;
+}
+.btnsize3:hover{
+    background-color: black;
+}
+
+.tablse{
+    margin-top: 10px;
+    width: 1000px;
+    height: 600px;
+    overflow-x:  scroll;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 120%;
+    position: relative;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 18px;
+    padding: 8px;
+  }
+/*   
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+  th{
+    position: sticky !important;
+    background-color: #BFBFBF;
+    top: 0;
+  }
+
+.lined{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7),rgba(54, 1, 1, 0.7));
+    border-radius: 30px;
+    padding: 10px;
+}
+.lined:hover{
+    text-decoration: none;
+    background-color: grey;
+}
+.lined2:hover{
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.438);
+    transition: all 0.3s;
+}
+.logout{
+    position: relative;
+    top: 50px;
+}
+img{
+    margin: 10px;
+}
+
+
+
+
+
+
+/* ========================== */
+.add-btns{
+    position: relative;
+    top: 400px;
+    right: 220px;
+    width: 200px;
+}
+#adding{
+    position: absolute;
+    top: 150px;
+    left: 0.1px;
+    width: 120px;
+}
+.opa{
+    width: 1120px;
+    background-color: rgba(16, 100, 100, 0);
+    position: fixed;
+    right: 1px;
+}
+.sNo{
+    width: 1px;
+    white-space: nowrap;
+}
+
+.date{
+    width: 120px;
+}
+.debit{
+    width: 100px !important;
+}
+.remains{
+    width: 100px !important;
+}
+.credit{
+    width: 100px !important;
+}
+.desc{
+    width: 400px !important;
+}
+.remarks{
+    width: 400px !important;
+}
+#totalDebit{
+    width: 100px !important;
+}
+#totalCredit{
+    width: 100px !important;
+
+}
+#totalGAP{
+    width: 315px !important;
+}
+/* .editbtnwidth{
+    width: 1100px;
+} */
+#editexampleInput1 , #editexampleInput2 ,#editexampleInput3 ,#editexampleInput4 ,#editexampleInput5 {
+    width: 1100px !important;
+}
+.tableBorder {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .detailbods td {
+    border: solid 1px #000;
+    border-style: none solid solid none;
+    padding: 10px;
+  }
+  
+  .trs:first-child th:first-child { border-top-left-radius: 10px; }
+  .trs:first-child th:last-child { border-top-right-radius: 10px; }
+  
+  .detailbods:last-child td:first-child { border-bottom-left-radius: 10px; }
+  .detailbods:last-child td:last-child { border-bottom-right-radius: 10px; }
+  
+  .detailbods:first-child td { border-top-style: solid; }
+  .detailbods td:first-child { border-left-style: solid; }
+@media screen and (max-width: 1350px) {
+    .add-btns{
+        position: relative;
+        top: 0px;
+        right: 0;
+        width: 900px !important;
+    }
+    #adding{
+        position: relative;
+        top: 0px;
+        left: 1px;
+        width: 120px;
+    }
+    .opa{
+        width: 700px !important;
+        background-color: rgba(16, 100, 100, 0);
+        position: relative;
+    }
+    .date{
+        width: 350px;
+    }
+    .debit{
+        width: 250px !important;
+    }
+    .credit{
+        width: 250px !important;
+    }
+    .desc{
+        width: 900px !important;
+    }
+    .trFlex{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+    #hashHide{
+        display: none;
+    }
+    .trFlex > td{
+        width: 720px;
+    }
+    .add-btns .opa{
+        width: 1000px !important;
+    }
+    .btnwidth{
+        width: 1060px;
+        position: absolute;
+        right: 20px;
+        top: 120px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .add-btns{
+        position: relative;
+        top: 0px;
+        width: 700px !important;
+    }
+    #adding{
+        position: relative;
+        top: 0px;
+        left: 1px;
+        width: 120px;
+    }
+    .opa{
+        width: 700px !important;
+        background-color: rgba(16, 100, 100, 0);
+        position: relative;
+    }
+    .date{
+        width: 700px;
+    }
+    .debit{
+        width: 700px !important;
+    }
+    .credit{
+        width: 700px !important;
+    }
+    .desc{
+        width: 700px !important;
+    }
+    .trFlex{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+    #hashHide{
+        display: none;
+    }
+    .trFlex > td{
+        width: 720px;
+    }
+    .add-btns .opa{
+        width: 700px !important;
+    }
+    .btnwidth{
+        width: 960px;
+        position: absolute;
+        right: 20px;
+        top: 120px;
+    }
+    #editexampleInput1 , #editexampleInput2 ,#editexampleInput3 ,#editexampleInput4 ,#editexampleInput5 {
+        width: 765px !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    #editexampleInput1 , #editexampleInput2 ,#editexampleInput3 ,#editexampleInput4 ,#editexampleInput5 {
+        width: 465px !important;
+    }
+    .btnwidth{
+        width: 1060px;
+        position: absolute;
+        right: 20px;
+        top: 120px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .add-btns{
+        position: relative;
+        top: 0px;
+        width: 400px !important;
+    }
+    #adding{
+        position: relative;
+        top: 0px;
+        left: 1px;
+        width: 120px;
+    }
+    .opa{
+        width: 420px !important;
+        background-color: rgba(16, 100, 100, 0);
+        position: relative;
+    }
+    .date{
+        width: 400px;
+    }
+    .debit{
+        width: 400px !important;
+    }
+    .credit{
+        width: 400px !important;
+    }
+    .desc{
+        width: 400px !important;
+    }
+    .trFlex{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    #hashHide{
+        display: none;
+    }
+    .trFlex > td{
+        width: 420px;
+    }
+    .add-btns .opa{
+        width: 400px !important;
+    }
+    .btnwidth{
+        width: 400px;
+    }
+    #editexampleInput1 , #editexampleInput2 ,#editexampleInput3 ,#editexampleInput4 ,#editexampleInput5 {
+        width: 425px !important;
+    }
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Queuing Model API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        #MM1Model{
+            display: none;
+        }
+        #MM2Model{
+            display: none;
+        }
+        #MG1Model{
+            display: none;
+        }
+        #GG1Model{
+            display: none;
+        }
+        .model{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Queuing and Simulation</h1>
+    <div class="container">
+    <select class="form-select" id="modelSelect" onchange="showModel()" aria-label="Default select example">
+        <option selected>Select Your Model</option>
+        <option value="1">M/M/1</option>
+        <option value="2">M/M/2</option>
+        <option value="3">M/G/1</option>
+        <option value="4">G/G/1</option>
+      </select>
+    </div>
+    <div id="MM1Model">
+    <div class="container">
+        <h1>M/M/1 Queuing Model Simulation</h1>
+        <form id="queuing-form">
+            <label for="lambda">Arrival Rate (λ):</label>
+            <input type="number" step="0.01" id="lambda" required>
+            
+            <label for="mu">Service Rate (μ):</label>
+            <input type="number" step="0.01" id="mu" required>
+            
+            
+            <button class="btn btn-primary" type="submit">Calculate</button>
+        </form>
+    </div>
+</div>
+<div id="MM2Model">
+    <div class="container">
+        <h1>M/M/2 Queuing Model Simulation</h1>
+        <form id="queuing-form2">
+            <label for="lambda">Arrival Rate (λ):</label>
+            <input type="number" step="0.01" id="lambda" required>
+            
+            <label for="mu">Service Rate (μ):</label>
+            <input type="number" step="0.01" id="mu" required>
+            
+            
+            <button class="btn btn-primary" type="submit">Calculate</button>
+        </form>
+    </div>
+</div>
+<div id="MG1Model">
+    <div class="container">
+        <h1>M/G/1 Queuing Model Simulation</h1>
+        <form id="queuing-form3">
+            <label for="lambda">Arrival Rate (λ):</label>
+            <input type="number" step="0.01" id="lambda" required>
+            
+            <label for="mu">Select Service Distribution:</label>
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Uniform</option>
+                <option value="2">Gamma</option>
+                <option value="3">Normal</option>
+              </select>
+              <div id="inputFields">
+              </div>
+              
+            
+            
+            <button class="btn btn-primary" type="submit">Calculate</button>
+        </form>
+    </div>
+</div>
+<div id="GG1Model">
+    <div class="container">
+        <h1>G/G/1 Queuing Model Simulation</h1>
+        <form id="queuing-form4">
+            <label for="mu">Select Inter-Arrival Distribution:</label>
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Uniform</option>
+                <option value="2">Gamma</option>
+                <option value="3">Normal</option>
+              </select>
+            
+              <div id="inputFields">
+                <!-- Input fields will be added here dynamically -->
+              </div>
+            <!-- <label for="mu">Service Rate (μ):</label> -->
+            <label for="mu">Select Service Distribution:</label>
+            <select id="dropdown2">
+                <option value="">Select an option</option>
+                <option value="1">Uniform</option>
+                <option value="2">Gamma</option>
+                <option value="3">Normal</option>
+              </select>
+              <div id="inputFields2">
+                <!-- Input fields will be added here dynamically -->
+              </div>
+              
+            
+            
+            <button class="btn btn-primary" type="submit">Calculate</button>
+        </form>
+    </div>
+</div>
+    <hr>
+    <div class="table2 container" >
+        <table class="table" id="simulate">
+            
+        </table>
+        
+    </div>
+    <div id="heading" class="container"></div>
+    <div class="table2 container" >
+        <table class="table" id="queuing">
+            
+          </table>
+        
+    </div>
+    <div class="table2 container" >
+        <table class="table" id="simulation">
+            
+        </table>
+        
+    </div>
+    
+    <div class="container">
+    <canvas id="myChart"></canvas>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
